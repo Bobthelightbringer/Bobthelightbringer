@@ -292,7 +292,13 @@ h3 {
 	font-size: 12px;
 	letter-spacing: 0px;
 }
-
+#investment_page {
+	margin: auto;
+}
+#investment_page p {
+	margin: auto;
+	width: 500px;
+}
 
 
 
