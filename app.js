@@ -176,6 +176,7 @@ function set_ingredient(ingredient) {
 			console.log(peas);
 		}
 	}
+	check_all();
 }
 
 function jamba_func () {
@@ -268,6 +269,13 @@ function sheph_func () {
 }
 
 function check_all () {
+	document.getElementById('general_status').innerHTML = '';
+	document.getElementById('jamba_status').innerHTML = '';
+	document.getElementById('shrim_status').innerHTML = '';
+	document.getElementById('paela_status').innerHTML = '';
+	document.getElementById('sweet_status').innerHTML = '';
+	document.getElementById('sweet_status').innerHTML = '';
+	
 	jamba_func();
 	shrim_func();
 	paela_func();
@@ -275,97 +283,122 @@ function check_all () {
 	sheph_func();
 	// verify if any recepies are complete
 	if (jamba == 0 || shrim == 0 || paela == 0 || sweet == 0 || sheph == 0 ) {
-		console.log("You have a complete recepie!");
+		console.log("You have a complete recipe!");
+		document.getElementById('general_status').innerHTML = 'You have a complete recipe!<br>';
 		if (jamba == 0) {
 			console.log("You have the ingredients to make Jambayala");
+			document.getElementById('jamba_status').innerHTML = 'You have the ingredients to make Jambayala.<br>';
 		}
 		if (shrim == 0) {
 			console.log("You have the ingredients to make Shrimp Scampi with Pasta");
+			document.getElementById('shrim_status').innerHTML = 'You have the ingredients to make Shrimp Scampi with Pasta.<br>';
 		}
 		if (paela == 0) {
 			console.log("You have the ingredients to make Paella");
+			document.getElementById('paela_status').innerHTML = 'You have the ingredients to make Paella.<br>';
 		}
 		if (sweet == 0) {
 			console.log("You have the ingredients to make Sweet Potato Soup");
+			document.getElementById('sweet_status').innerHTML = 'You have the ingredients to make Sweet Potato Soup.<br>';
 		}
 		if (sheph == 0) {
 			console.log("You have the ingredients to make Shepherd's Pie");
+			document.getElementById('sweet_status').innerHTML = "You have the ingredients to make Shepherd's Pie.<br>";
 		}
 	}
 	else if (jamba == 1 || shrim == 1 || paela == 1 || sweet == 1 || sheph == 1 ) {
 		console.log("You have no complete recepies.");
+		document.getElementById('general_status').innerHTML = 'You have no complete recipes!<br>';
 		if (jamba == 1) {
 			console.log("You are missing 1 ingredient in order to make Jambayala");
 			if (chickenbreast == false) {
 				console.log("You are missing chicken breasts");
+				document.getElementById('jamba_status').innerHTML = 'You are missing 1 ingredient in order to make Jambayala.<br> You are missing chicken breasts <br>';
 			}
 			else if (onion == false) {
 				console.log("You are missing onion");
+				document.getElementById('jamba_status').innerHTML = 'You are missing 1 ingredient in order to make Jambayala.<br> You are missing onions <br>';
 			}
 			else if (celery == false) {
 				console.log("You are missing celery");
+				document.getElementById('jamba_status').innerHTML = 'You are missing 1 ingredient in order to make Jambayala.<br> You are missing celery <br>';
 			}
 			else if (rice == false) {
 				console.log("You are missing rice");
+				document.getElementById('jamba_status').innerHTML = 'You are missing 1 ingredient in order to make Jambayala.<br> You are missing rice <br>';
 			}
 		}
 		if (shrim == 1) {
 			console.log("You are missing 1 ingredient in order to make Shrimp Scampi with Pasta");
 			if (pasta == false) {
 				console.log("You are missing pasta");
+				document.getElementById('shrim_status').innerHTML = 'You are missing 1 ingredient in order to make Shrimp Scampi with Pasta.<br> You are missing pasta <br>';
 			}
 			else if (shrimp == false) {
 				console.log("You are missing shrimp");
+				document.getElementById('shrim_status').innerHTML = 'You are missing 1 ingredient in order to make Shrimp Scampi with Pasta.<br> You are missing shrimp <br>';
 			}
 			else if (zucchini == false) {
 				console.log("You are missing Zucchini");
+				document.getElementById('shrim_status').innerHTML = 'You are missing 1 ingredient in order to make Shrimp Scampi with Pasta.<br> You are missing zucchini <br>';
 			}
 		}
 		if (paela == 1) {
 			console.log("You are missing 1 ingredient in order to make Paella");
 			if (chickenbreast == false) {
 				console.log("You are missing chicken breasts");
+				document.getElementById('paela_status').innerHTML = 'You are missing 1 ingredient in order to make Paella.<br> You are missing chicken breasts <br>';
 			}
 			else if (shrimp == false) {
 				console.log("You are missing shrimp");
+				document.getElementById('paela_status').innerHTML = 'You are missing 1 ingredient in order to make Paella.<br> You are missing shrimp <br>';
 			}
 			else if (rice == false) {
 				console.log("You are missing rice");
+				document.getElementById('paela_status').innerHTML = 'You are missing 1 ingredient in order to make Paella.<br> You are missing rice <br>';
 			}
 			else if (onion == false) {
 				console.log("You are missing onions");
+				document.getElementById('paela_status').innerHTML = 'You are missing 1 ingredient in order to make Paella.<br> You are missing onion <br>';
 			}
 		}
 		if (sweet == 1) {
 			console.log("You are missing 1 ingredient in order to make Sweet Potato Soup");
 			if (sweetpotato == false) {
 				console.log("You are missing sweet potato");
+				document.getElementById('sweet_status').innerHTML = 'You are missing 1 ingredient in order to make Sweet Potato Soup.<br> You are missing sweet potato <br>';
 			}
 			else if (chorizo == false) {
 				console.log("You are missing chorizo");
+				document.getElementById('sweet_status').innerHTML = 'You are missing 1 ingredient in order to make Sweet Potato Soup.<br> You are missing chorizo <br>';
 			}
 			else if (celery == false) {
 				console.log("You are missing celery");
+				document.getElementById('sweet_status').innerHTML = 'You are missing 1 ingredient in order to make Sweet Potato Soup.<br> You are missing celery <br>';
 			}
 		}
 		if (sheph == 1) {
 			console.log("You are missing 1 ingredient in order to make Shepherd's Pie");
 			if (onion == false) {
 				console.log("You are missing onions");
+				document.getElementById('sweet_status').innerHTML = "You are missing 1 ingredient in order to make Shepherd's Pie.<br> You are missing onion <br>";
 			}
 			else if (groundbeef = false) {
 				console.log("You are missing ground beef");
+				document.getElementById('sweet_status').innerHTML = "You are missing 1 ingredient in order to make Shepherd's Pie.<br> You are missing grounded beef <br>";
 			}
 			else if (peas == false) {
 				console.log("You are missing peas");
+				document.getElementById('sweet_status').innerHTML = "You are missing 1 ingredient in order to make Shepherd's Pie.<br> You are missing peas <br>";
 			}
 			else if (potato == false) {
 				console.log("You are missing potatoes");
+				document.getElementById('sweet_status').innerHTML = "You are missing 1 ingredient in order to make Shepherd's Pie.<br> You are missing potato <br>";
 			}
 		}
 	}
 	else {
-		console.log("You have no good recepies avaliable right now");
+		document.getElementById('general_status').innerHTML = 'No recipes are found with your available ingredients.';
 	}
 	
 }

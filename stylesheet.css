@@ -277,6 +277,21 @@ h3 {
 .food_button:hover {
 	background-color: #aaa;
 }
+#display_recipes {
+	color:#fff;
+	text-decoration:none;  
+	cursor: auto;
+}
+#display_recipes div {
+	float: left;
+	color:#fff;
+	text-decoration:none; 
+	cursor: auto;
+}
+#drop_menu_3 {
+	font-size: 12px;
+	letter-spacing: 0px;
+}
 
 
 
