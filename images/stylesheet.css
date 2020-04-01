@@ -1,0 +1,324 @@
+html {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	background-color: #333;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #111;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+p {
+	color: #ccc;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	font-family: "Calibre", "Proxima Nova", "proxima-nova", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
+}
+img {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 10px;
+	border-style: solid;
+	border-color: #2b2b2b;
+	margin-bottom: 15px;
+}
+h1 {
+	margin:0px;
+	text-align: center;
+	font-size: 95px;
+	letter-spacing: 25px;
+	color: #fff;
+}
+h3 {
+	margin:0px;
+	text-align: center;
+	font-size: 35px;
+	font-family: MajestiBanner-Medium,serif;
+	letter-spacing: 6px;
+	font-weight: 100;
+	color: #fff;
+	margin: auto;
+}
+#navbar {
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-color: #fff;
+}
+#navcontent {
+	height: 30px;
+	padding: 20px;
+}
+#navcontent #logo {
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	width: 220px;
+	margin: 0px;
+	font-family: MajestiBanner-Medium,serif;
+	float:left;
+}
+#navcontent .button {
+	color: #ccc;
+	font-family: Work Sans,system-ui,sans-serif;
+	letter-spacing: 2px;
+	font-weight: light;
+	font-size: 13px;
+	width: 100px;
+	height: 25px;
+	display: block;
+	float: right;
+	text-align: center;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	cursor: pointer;
+	transition: color 0.6s;
+	text-decoration: none;
+	user-select: none;
+}
+#navcontent .button:hover {
+	color: red;
+	transition: color 0.6s;
+}
+#navdivider {
+	height: 1px;
+	background-color: #fff;
+}
+.underline {
+	width: 100%;
+	height: 1px;
+	background-color: #777;
+}
+.fullpage {
+	width: 100%;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 10px;
+	border-style: solid;
+	border-color: #1b1b1b;
+	margin-bottom: 15px;
+}
+.midpage {
+	width: 1000px;
+	margin: auto;
+	background-color: #444;
+	padding: 30px;
+	padding-top: 15px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 10px;
+	border-style: solid;
+	border-color: #1b1b1b;
+	margin-bottom: 15px;
+}
+#page1 {
+	height: 920px;
+	background-image: url("images/fruit2.jpg");
+}
+#page2 {
+	
+}
+#page3 {
+	height: 340px;
+}
+#page4 {
+	height: 390px;
+}
+#page5 {
+	height: 450px;
+}
+#page6 {
+	background-image: url("images/arduino2.jpg");
+	height: 750px;
+}
+#page7 {
+	width: 100%;
+	height: 10px;
+	background-color: #111;
+}
+#page2 p {
+	margin: auto;
+	margin-top: 0px;
+}
+#page3 p {
+	width: 420px;
+	display: block;
+	float: left;
+}
+#page4 p {
+	width: 420px;
+	display: block;
+	float: right;
+}
+#page5 p {
+	width: 420px;
+	display: block;
+	float: left;
+}
+#page6 h3 {
+	padding: 200px;
+	padding-bottom: 50px;
+}
+#page6 p {
+	width: 650px;
+	margin: auto;
+	text-align: center;
+}
+#footer {
+	width: 100%;
+	background-color: #222;
+	height: 140px;
+	padding-top: 30px;
+}
+#footer div div {
+	float: left;
+}
+#demo {
+	width: 100%;
+	height: 800px;
+	margin: auto;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 10px;
+	border-style: solid;
+	border-color: #111;
+}
+#phone_demo {
+	overflow: hidden;
+	margin: auto;
+	width: 376px;
+	height: 584px;
+	padding: 20px;
+	padding-top: 40px;
+	background-image: url("images/phone.png");
+	margin-top: 100px;
+	user-select: none;
+}
+#phone_demo #demo_wrap {
+	overflow: hidden;
+	height: 584px;
+}
+#phone_demo #demo_wrap .dropdown {
+	overflow: hidden;
+	background-color: #aaa;
+	font-family: Work Sans,system-ui,sans-serif;
+	width: 310px;
+	color: #fff;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	padding: 10px;
+	letter-spacing: 3px;
+	transition: all 0.6s;
+	height: 21px;
+}
+.box_button {
+	width: 250px; 
+	float:left; 
+	style: block; 
+	cursor: pointer;
+}
+#phone_demo #demo_wrap .dropdown:hover {
+	background-color: #888;
+}
+.timer {
+	float:right;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: #555;
+	padding: 3px;
+}
+.food_button {
+	float: left;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: #ccc;
+	padding: 3px;
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	letter-spacing: 1px;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+.food_button:hover {
+	background-color: #aaa;
+}
+#display_recipes {
+	color:#fff;
+	text-decoration:none;  
+	cursor: auto;
+}
+#display_recipes div {
+	float: left;
+	color:#fff;
+	text-decoration:none; 
+	cursor: auto;
+}
+#drop_menu_3 {
+	font-size: 12px;
+	letter-spacing: 0px;
+}
+#investment_page {
+	margin: auto;
+}
+#investment_page p {
+	margin: auto;
+	width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
