@@ -19,18 +19,162 @@ var paela = 4; //paella
 var sweet = 3; //sweetpotatosoup
 var sheph = 4; //shepherdspie
 
-function test_func() {
-	console.log("function working");
-}
-
 function resize(html_id) {
 	if (document.getElementById(html_id).style.height == '21px') {
 		console.log('window height 21 px');
-		document.getElementById(html_id).style.height = '300px';
+		document.getElementById(html_id).style.height = '170px';
 	}
-	else if (document.getElementById(html_id).style.height == '300px') {
-		console.log('window height 300 px');
+	else if (document.getElementById(html_id).style.height == '170px') {
+		console.log('window height 170 px');
 		document.getElementById(html_id).style.height = '21px';
+	}
+}
+
+function set_ingredient(ingredient) {
+	console.log("Your ingredient is: " + ingredient);
+	if (ingredient == 'chickenbreasts') {
+		if (chickenbreast == false) {
+			chickenbreast = true;
+			console.log(chickenbreast);
+			document.getElementById('chick_button_1').style.color = '#c44';
+		}
+		else if (chickenbreast == true) {
+			chickenbreast = false;
+			document.getElementById('chick_button_1').style.color = '#fff';
+			console.log(chickenbreast);
+		}
+	}
+	if (ingredient == 'onion') {
+		if (onion == false) {
+			onion = true;
+			console.log(onion);
+			document.getElementById('onion_button_1').style.color = '#c44';
+		}
+		else if (onion == true) {
+			onion = false;
+			document.getElementById('onion_button_1').style.color = '#fff';
+			console.log(onion);
+		}
+	}
+	if (ingredient == 'celery') {
+		if (celery == false) {
+			celery = true;
+			console.log(celery);
+			document.getElementById('celry_button_1').style.color = '#c44';
+		}
+		else if (celery == true) {
+			celery = false;
+			document.getElementById('celry_button_1').style.color = '#fff';
+			console.log(celery);
+		}
+	}
+	if (ingredient == 'pasta') {
+		if (pasta == false) {
+			pasta = true;
+			console.log(pasta);
+			document.getElementById('pasta_button_1').style.color = '#c44';
+		}
+		else if (pasta == true) {
+			pasta = false;
+			document.getElementById('pasta_button_1').style.color = '#fff';
+			console.log(pasta);
+		}
+	}
+	if (ingredient == 'shrimp') {
+		if (shrimp == false) {
+			shrimp = true;
+			console.log(shrimp);
+			document.getElementById('shrim_button_1').style.color = '#c44';
+		}
+		else if (shrimp == true) {
+			shrimp = false;
+			document.getElementById('shrim_button_1').style.color = '#fff';
+			console.log(shrimp);
+		}
+	}
+	if (ingredient == 'zucchini') {
+		if (zucchini == false) {
+			zucchini = true;
+			console.log(zucchini);
+			document.getElementById('zuchn_button_1').style.color = '#c44';
+		}
+		else if (zucchini == true) {
+			zucchini = false;
+			document.getElementById('zuchn_button_1').style.color = '#fff';
+			console.log(zucchini);
+		}
+	}
+	if (ingredient == 'rice') {
+		if (rice == false) {
+			rice = true;
+			console.log(rice);
+			document.getElementById('rice_button_1').style.color = '#c44';
+		}
+		else if (rice == true) {
+			rice = false;
+			document.getElementById('zrice_button_1').style.color = '#fff';
+			console.log(rice);
+		}
+	}
+	if (ingredient == 'sweetpotato') {
+		if (sweetpotato == false) {
+			sweetpotato = true;
+			console.log(sweetpotato);
+			document.getElementById('sweet_button_1').style.color = '#c44';
+		}
+		else if (sweetpotato == true) {
+			sweetpotato = false;
+			document.getElementById('sweet_button_1').style.color = '#fff';
+			console.log(sweetpotato);
+		}
+	}
+	if (ingredient == 'chorizo') {
+		if (chorizo == false) {
+			chorizo = true;
+			console.log(chorizo);
+			document.getElementById('chrzo_button_1').style.color = '#c44';
+		}
+		else if (chorizo == true) {
+			chorizo = false;
+			document.getElementById('chrzo_button_1').style.color = '#fff';
+			console.log(chorizo);
+		}
+	}
+	if (ingredient == 'groundbeef') {
+		if (groundbeef == false) {
+			groundbeef = true;
+			console.log(groundbeef);
+			document.getElementById('gndbf_button_1').style.color = '#c44';
+		}
+		else if (groundbeef == true) {
+			groundbeef = false;
+			document.getElementById('gndbf_button_1').style.color = '#fff';
+			console.log(groundbeef);
+		}
+	}
+	if (ingredient == 'potato') {
+		if (potato == false) {
+			potato = true;
+			console.log(potato);
+			document.getElementById('potat_button_1').style.color = '#c44';
+		}
+		else if (potato == true) {
+			potato = false;
+			document.getElementById('potat_button_1').style.color = '#fff';
+			console.log(potato);
+		}
+	}
+	if (ingredient == 'peas') {
+		if (peas == false) {
+			peas = true;
+			console.log(peas);
+			document.getElementById('peas_button_1').style.color = '#c44';
+		}
+		else if (peas == true) {
+			peas = false;
+			document.getElementById('peas_button_1').style.color = '#fff';
+			console.log(peas);
+		}
 	}
 }
 

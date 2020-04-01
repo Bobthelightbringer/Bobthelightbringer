@@ -231,6 +231,7 @@ h3 {
 	height: 584px;
 }
 #phone_demo #demo_wrap .dropdown {
+	overflow: hidden;
 	background-color: #aaa;
 	font-family: Work Sans,system-ui,sans-serif;
 	width: 310px;
@@ -241,9 +242,14 @@ h3 {
 	border-radius: 3px;
 	padding: 10px;
 	letter-spacing: 3px;
-	cursor: pointer;
 	transition: all 0.6s;
 	height: 21px;
+}
+.box_button {
+	width: 250px; 
+	float:left; 
+	style: block; 
+	cursor: pointer;
 }
 #phone_demo #demo_wrap .dropdown:hover {
 	background-color: #888;
@@ -254,6 +260,22 @@ h3 {
 	border-radius: 3px;
 	background-color: #555;
 	padding: 3px;
+}
+.food_button {
+	float: left;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: #ccc;
+	padding: 3px;
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	letter-spacing: 1px;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+.food_button:hover {
+	background-color: #aaa;
 }
 
 
